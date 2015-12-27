@@ -24,3 +24,10 @@ Then navigate to localhost:8080.
 ## License ##
 
 BSD.
+
+## To Do ##
+
+- Error Messages
+- Preloader for map and table content
+- Map UI fixes for mobile
+- Prediction functionality and tab 
