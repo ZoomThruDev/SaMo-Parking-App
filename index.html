@@ -25,12 +25,21 @@
 
         <!-- NAVIGATION -->
         <nav>
-          <ul>
+          <div>
+          <ul id="desktopNav">
             <li><a href="#/table">Table</a></li>
             <li><a href="#/map">Map</a></li>
             <li><a href="#/about">About</a></li>
+          </ul>
 
-          <ul>
+          <ul id="mobileNav">
+            <div class="mobileButtonsList">
+            <li><a href="#/table"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Table</button></a></li>
+            <li><a href="#/map"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Map</button></a></li>
+            <li><a href="#/about"><button class="btn btn--m btn--blue btn--raised" lx-ripple>About</button></a></li>
+          </div>
+          </ul>
+        </div>
         </nav>
 
         <!-- CONTENT -->
