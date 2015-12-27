@@ -1,0 +1,42 @@
+<div ng-controller="tableCtrl">
+  <div>
+    <div flex-item>
+        <div class="card">
+            <div class="toolbar">
+                <lx-search-filter model="searchLots" filter-width="100%" placeholder="Search"></lx-search-filter>
+            </div>
+        </div>
+    </div>
+
+  <div class="data-table-container">
+    <table class="data-table">
+      <thead>
+        <tr class="data-table__sortable-cell">
+          <th>
+            Lot Name
+          </th>
+          <th>
+              Address</th>
+          <th>Location</th>
+          <th ng-click="sortType = 'available_spaces'; sortReverse = !sortReverse">
+            Avail. Spaces
+            <span ng-show="sortType == 'available_spaces' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'available_spaces' && sortReverse" class="fa fa-caret-up"></span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody id="lotsTable">
+        <tr ng-repeat="lot in lots | orderBy:sortType:sortReverse | filter:searchLots" class="data-table__sortable-cell">
+          <td>{{ lot.name }}</td>
+          <td><a href="http://maps.google.com/?q={{ lot.street_address }} Santa Monica, CA">{{ lot.street_address }}<a></td>
+          <td>{{ lot.description }}</td>
+          <td>{{ lot.available_spaces }}</td> <!--[{{$index + 1}}] -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<lx-progress ng-show="preLoader" glx-type="linear" lx-color="primary"></lx-progress>
+
+</div>

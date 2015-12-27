@@ -1,0 +1,22 @@
+tr:nth-of-type(odd) {
+  background: #fff;
+
+  }
+
+#lotsTable tr:hover {
+  background: #777;
+}
+
+#lotsTable tr:hover td {
+  color: #fff;
+}
+
+
+.angular-google-map-container {
+  height: 800px;
+}
+
+#directionsButton {
+  margin-left: auto;
+  margin-right: auto; 
+}

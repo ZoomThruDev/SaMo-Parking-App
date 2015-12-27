@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="samoPark">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>Santa Monica Parking Status</title>
+  <meta name="description" content="An Angular App to Check Parking Availability at Santa Monica Public Parking Structures and Lots">
+  <meta name="author" content="Eric Fram">
+
+  <!-- lumx includes  -->
+  <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="styles/custom-styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+
+<!-- BODY -->
+
+<body ng-controller="mainCtrl">
+
+        <!-- NAVIGATION -->
+        <nav>
+          <ul>
+            <li><a href="#/table">Table</a></li>
+            <li><a href="#/map">Map</a></li>
+            <li><a href="#/about">About</a></li>
+
+          <ul>
+        </nav>
+
+        <!-- CONTENT -->
+        <div ng-view>
+        </div>
+
+    <!-- Scripts -->
+      <!-- lumx includes -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/velocity/velocity.js"></script>
+      <script src="bower_components/moment/min/moment-with-locales.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/lumx/dist/lumx.js"></script>
+
+      <!-- own includes -->
+      <script src="vendor/angular-route.min.js"></script>
+
+      <!-- angular google maps -->
+      <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+      <script src='bower_components/lodash/lodash.min.js'></script>
+      <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+      <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+      <!-- controllers -->
+      <script src="controllers/main.js"></script>
+      <script src="controllers/about.js"></script>
+      <script src="controllers/map.js"></script>
+      <script src="controllers/table.js"></script>
+
+      <!-- services -->
+      <script src="services/getParkingData.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+
+<div ng-controller="mapCtrl">
+
+  <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+    <ui-gmap-markers
+    idkey="lots.id"
+    models="lots"
+    coords="'self'"
+    icon="'icon'"
+    >
+    <ui-gmap-windows show="show">
+      <div ng-non-bindable>
+        <p>{{street_address}}</p>
+        <p>Avail. Spaces: {{available_spaces}}</p>
+        <a href="http://maps.google.com/?q={{street_address}} Santa Monica, CA">
+          <button id="directionsButton" class="btn btn--m btn--blue btn--raised" lx-ripple>
+            Directions
+          </button>
+        </a>
+      </div>
+    </ui-gmap-windows>
+  </ui-gmap-markers>
+
+</ui-gmap-google-map>
+</div>
