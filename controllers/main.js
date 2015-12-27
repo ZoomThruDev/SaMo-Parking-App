@@ -15,13 +15,13 @@ samoPark.config(function ($routeProvider) {
       controller: 'aboutCtrl'
     });
     $routeProvider.otherwise({
-      templateUrl: 'views/table.html',
-      controller: 'tableCtrl'
+      templateUrl: 'views/map.html',
+      controller: 'mapCtrl'
     });
   });
 
 
 
 function mainCtrl($http, $scope) {
-    
+
 }
