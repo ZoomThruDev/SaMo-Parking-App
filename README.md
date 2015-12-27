@@ -6,7 +6,7 @@ This project was built with [AngularJS](https://angularjs.org/) using the [LumX]
 
 ## Functionality ##
 
-This app is completely responsive. When the screen width is less than 768px, the UI will adapt to replicate typical design patters for native mobile apps
+This app is responsive. When the screen width is less than 768px, the UI will adapt to replicate typical design patterns for native mobile apps.
 
 The Map section of the app displays the locations of all public parking garages in Santa Monica. Garages are color-coded based on their available spots.
 
