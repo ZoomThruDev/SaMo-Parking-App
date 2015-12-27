@@ -133,6 +133,8 @@
 
 
   /* NAV MEDIA QUERIES */
+
+
 @media screen and (max-width : 768px) {
   #mobileNav {
     display: block;
@@ -230,7 +232,7 @@ tr:nth-of-type(odd) {
 
 /* Map Styles Media Queries */
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 768px){
   .mapPage {
     margin-bottom: 55.556px;
   }
