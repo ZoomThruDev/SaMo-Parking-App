@@ -25,21 +25,40 @@
 
         <!-- NAVIGATION -->
         <nav>
-          <div>
-          <ul id="desktopNav">
-            <li><a href="#/table">Table</a></li>
-            <li><a href="#/map">Map</a></li>
-            <li><a href="#/about">About</a></li>
-          </ul>
-
-          <ul id="mobileNav">
-            <div class="mobileButtonsList">
-            <li><a href="#/table"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Table</button></a></li>
+          <div id="desktopNav">
+            <div class="desktopButtonsList">
+              <div class="brand">
+                <button id="brandButton" class="btn btn--m btn--blue btn--flat" lx-ripple>Santa Monica Public Parking Garages</button>
+            </div>
+          <ul>
             <li><a href="#/map"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Map</button></a></li>
+            <li><a href="#/table"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Table</button></a></li>
             <li><a href="#/about"><button class="btn btn--m btn--blue btn--raised" lx-ripple>About</button></a></li>
+          </ul>
+          </div>
+        </div>
+
+          <div id="mobileNav">
+            <div class="mobileButtonsList">
+            <ul>
+            <li><a href="#/map"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Map</button></a></li>
+            <li><a href="#/table"><button class="btn btn--m btn--blue btn--raised" lx-ripple>Table</button></a></li>
+            <li><a href="#/about"><button class="btn btn--m btn--blue btn--raised" lx-ripple>About</button></a></li>
+          </ul>
           </div>
           </ul>
         </div>
+
+        <div id="mobileHeader">
+          <div class="mobileHeaderButton">
+            <div class="mobileBrand">
+          <a href="#/map">
+            <button id="mobileBrandButton" class="btn btn--m btn--blue btn--flat" lx-ripple>Santa Monica Public Parking Garages</button>
+          </a>
+      </div>
+    </div>
+  </div>
+
         </nav>
 
         <!-- CONTENT -->
