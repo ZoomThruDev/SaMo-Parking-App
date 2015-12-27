@@ -7,6 +7,7 @@
 .brand {
   float: left;
   position: absolute;
+  padding-left: 10px;
 }
 
 .brand #brandButton {
@@ -224,7 +225,7 @@ tr:nth-of-type(odd) {
 .mapLegend img {
   display: inline;
   vertical-align: middle;
-  height: 20px; 
+  height: 20px;
 }
 
 /* Map Styles Media Queries */
