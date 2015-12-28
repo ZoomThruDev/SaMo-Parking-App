@@ -1,10 +1,10 @@
 angular.module('getParkingData',['lumx'])
 .factory('getParkingData', getParkingData)
 
-function getParkingData($http, $scope) {
+function getParkingData($http, $scope, LxNotificationService) {
 
 
-    var lotsUrl = "https://parking.api.smgov.net/lots";
+    var lotsUrl = "https://parking.api.smgov.net/lots";//"https://parking.api.smgov.net/lots"
     // make the API call
     return $http.get(lotsUrl, $scope)
       // success condition
@@ -13,6 +13,7 @@ function getParkingData($http, $scope) {
         })
       // error condition
       .catch(function(response) {
-        console.log("error");
+        console.log("$http get error");
+        LxNotificationService.error('Data Error');
       })
     }

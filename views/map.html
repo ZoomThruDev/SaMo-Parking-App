@@ -1,7 +1,7 @@
 
 
 
-<div class="mapPage" ng-controller="mapCtrl">
+<div class="mapPage" > <!-- ng-controller="mapCtrl" provided through mainCtrl routing --> 
 
   <div class="mapLegendContainer">
     <div class=mapLegend>
@@ -9,9 +9,9 @@
         <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/red.png'> &nbsp < 25 spots avail. </button>
         <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/orange.png'> &nbsp 25 - 149 spots avail.</button>
         <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/green.png'> &nbsp 150 - 299 spots avail.</button>
-        <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/blue.png'> &nbsp 300+ spots avail.</button> 
+        <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/blue.png'> &nbsp 300+ spots avail.</button>
+        <lx-progress lx-type="linear" lx-color="primary" ng-show="preLoader"></lx-progress>
         </p>
-
     </div>
   </div>
 
@@ -37,4 +37,7 @@
   </ui-gmap-markers>
 
 </ui-gmap-google-map>
+
+
+
 </div>

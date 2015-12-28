@@ -2,8 +2,9 @@ angular.module('map',['getParkingData','uiGmapgoogle-maps','lumx'])
 
 .controller('mapCtrl', mapCtrl)
 
-function mapCtrl($scope, $http) {
+function mapCtrl($scope, $http, LxNotificationService) {
   $scope.preLoader = true;
+
   lotsData = getParkingData($http, $scope)
   .then(function(data){
     // loop to attach correct icon to data
@@ -18,13 +19,17 @@ function mapCtrl($scope, $http) {
       data[x].icon = "images/blue.png";
     }
   }
-    console.log(data);
+    // update the information on the page
     $scope.lots = data;
     $scope.preLoader = false;
     $scope.map = { center: { latitude: 34.012590, longitude: -118.493004 }, zoom: 14 }; //34.012590, -118.493004
-    // data.url = $sce.trustAsResourceUrl(data.url);
+    LxNotificationService.success('Data Loaded');
+
+    // data.url = $sce.trustAsResourceUrl(data.url); // not necessary for this application
   }, function (error){
+    $scope.preLoader = false;
     console.log("promise rejected");
+    LxNotificationService.error('Data Error');
   });
 
 }
