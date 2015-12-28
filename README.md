@@ -23,9 +23,7 @@ Then navigate to localhost:8080.
 
 ## License ##
 
-BSD.
+BSD
 
 ## To Do ##
-
-- Map UI fixes for mobile
 - Prediction functionality and tab
