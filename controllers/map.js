@@ -23,7 +23,7 @@ function mapCtrl($scope, $http, LxNotificationService) {
     $scope.lots = data;
     $scope.preLoader = false;
     $scope.map = { center: { latitude: 34.012590, longitude: -118.493004 }, zoom: 14 }; //34.012590, -118.493004
-    // LxNotificationService.success('Data Loaded'); disabled as not always necessary 
+    // LxNotificationService.success('Data Loaded'); disabled as not always necessary
 
     // data.url = $sce.trustAsResourceUrl(data.url); // not necessary for this application
   }, function (error){

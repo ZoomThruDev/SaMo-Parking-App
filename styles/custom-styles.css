@@ -191,7 +191,13 @@ tr:nth-of-type(odd) {
 /* Map Styles */
 .angular-google-map-container {
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
+}
+
+@media screen and (max-width : 768px) {
+  .angular-google-map-container {
+    height: calc(100vh - 55.556px);
+  }
 }
 
 #directionsButton {

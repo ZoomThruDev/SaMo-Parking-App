@@ -23,5 +23,4 @@ samoPark.config(function ($routeProvider) {
 
 
 function mainCtrl($http, $scope) {
-
 }
