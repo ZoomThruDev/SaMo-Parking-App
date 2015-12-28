@@ -14,6 +14,6 @@ function getParkingData($http, $scope, LxNotificationService) {
       // error condition
       .catch(function(response) {
         console.log("$http get error");
-        LxNotificationService.error('Data Error');
+        LxNotificationService.error('Data Error'); // this also called by map and table controllers on failure
       })
     }

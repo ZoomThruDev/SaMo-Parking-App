@@ -12,7 +12,7 @@ function tableCtrl($scope, $http, LxNotificationService) {
        $scope.lots = data;
        $scope.preLoader = false;
        // alert success
-       LxNotificationService.success('Data Loaded');
+       // LxNotificationService.success('Data Loaded'); disabled as not always necessary 
 
        // data.url = $sce.trustAsResourceUrl(data.url);
      }, function (error){

@@ -23,13 +23,13 @@ function mapCtrl($scope, $http, LxNotificationService) {
     $scope.lots = data;
     $scope.preLoader = false;
     $scope.map = { center: { latitude: 34.012590, longitude: -118.493004 }, zoom: 14 }; //34.012590, -118.493004
-    LxNotificationService.success('Data Loaded');
+    // LxNotificationService.success('Data Loaded'); disabled as not always necessary 
 
     // data.url = $sce.trustAsResourceUrl(data.url); // not necessary for this application
   }, function (error){
     $scope.preLoader = false;
     console.log("promise rejected");
-    LxNotificationService.error('Data Error');
+    LxNotificationService.error('Data Error'); // this function also called by getParkingData service on failure
   });
 
 }
