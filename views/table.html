@@ -1,9 +1,10 @@
-<div class="tablePage" ng-controller="tableCtrl">
+<div class="tablePage" > <!-- ng-controller="tableCtrl" provided through mainCtrl routing -->
   <div>
     <div flex-item>
         <div class="card">
             <div class="toolbar">
                 <lx-search-filter model="searchLots" filter-width="100%" placeholder="Search"></lx-search-filter>
+                <lx-progress lx-type="linear" lx-color="primary" ng-show="preLoader"></lx-progress>
             </div>
         </div>
     </div>

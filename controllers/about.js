@@ -1,4 +1,4 @@
-angular.module('about',[])
+angular.module('about',['lumx'])
 
 .controller('aboutCtrl', aboutCtrl)
 
