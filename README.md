@@ -27,3 +27,4 @@ BSD
 
 ## To Do ##
 - Prediction functionality and tab
+- Analytics
