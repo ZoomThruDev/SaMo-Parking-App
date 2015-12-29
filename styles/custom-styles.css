@@ -190,6 +190,9 @@ tr:nth-of-type(odd) {
   /* Table Styles Media Queries */
 
   @media screen and (max-width : 768px) {
+    .tablePage{
+     margin-bottom: 55.556px; 
+   }
   }
 
 /* Map Styles */
