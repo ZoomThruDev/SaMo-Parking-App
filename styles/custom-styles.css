@@ -171,6 +171,10 @@ tr:nth-of-type(odd) {
   color: #fff;
 }
 
+#lotsTable tr:hover td a {
+    color: #64B5F6;
+}
+
 .tablePage {
   margin-top: 55.556px;
 }
@@ -191,7 +195,7 @@ tr:nth-of-type(odd) {
 /* Map Styles */
 .angular-google-map-container {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
 }
 
 @media screen and (max-width : 768px) {
@@ -266,6 +270,14 @@ tr:nth-of-type(odd) {
   padding: 24px;
   border-bottom: 1px solid #ddd;
 
+}
+
+.aboutContent a {
+  color: #1565C0;
+}
+
+.aboutContent a:visited {
+  color: #1565C0;
 }
 
 
