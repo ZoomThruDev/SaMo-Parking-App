@@ -191,7 +191,7 @@ tr:nth-of-type(odd) {
 
   @media screen and (max-width : 768px) {
     .tablePage{
-     margin-bottom: 55.556px; 
+     margin-bottom: 55.556px;
    }
   }
 
@@ -285,3 +285,9 @@ tr:nth-of-type(odd) {
 
 
 /* Utility Styles */
+
+
+.preLoaderDiv {
+  display: block;
+  position: relative;
+}
