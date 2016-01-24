@@ -20,6 +20,10 @@ Node server.js
 ```
 Then navigate to localhost:8080.
 
+## Native Mobile App ##
+
+This app is also available as a free iOS native app. [Download it here](https://itunes.apple.com/us/app/santa-monica-parking-public/id1071323912?ls=1&mt=8).
+
 
 ## License ##
 

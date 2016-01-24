@@ -3,7 +3,9 @@
 
 <div class="mapPage" > <!-- ng-controller="mapCtrl" provided through mainCtrl routing -->
 
+
   <div class="mapLegendContainer">
+
     <div class=mapLegend>
       <p class="fs-body-2 display-block">
         <button class="btn btn--xs btn--black btn--flat" lx-ripple><img src='images/red.png'> &nbsp < 25 spots avail. </button>
@@ -28,7 +30,7 @@
         <p>{{street_address}}</p>
         <p>Avail. Spaces: {{available_spaces}}</p>
         <a href="http://maps.google.com/?q={{street_address}} Santa Monica, CA">
-          <button id="directionsButton" class="btn btn--m btn--blue btn--raised" lx-ripple>
+          <button id="directionsButton" ng-click="FlurryAgent.logEvent('directionClick');" class="btn btn--m btn--blue btn--raised" lx-ripple>
             Directions
           </button>
         </a>
@@ -38,6 +40,6 @@
 
 </ui-gmap-google-map>
 
-
+<script src="flurry/flurryMapPage.js"> </script>
 
 </div>
