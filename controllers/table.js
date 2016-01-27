@@ -1,12 +1,12 @@
-angular.module('table',['getParkingData','lumx'])
+angular.module('table',['parking-data.service','lumx'])
 
 .controller('tableCtrl', tableCtrl)
 
-function tableCtrl($scope, $http, LxNotificationService) {
+function tableCtrl($scope, LxNotificationService, parkingDataService) {
   $scope.preLoader = true;
 
   //fetch the data
-  getParkingData($http, $scope)
+  parkingDataService.getData()
      .then(function(data){
        console.log(data);
        $scope.lots = data;

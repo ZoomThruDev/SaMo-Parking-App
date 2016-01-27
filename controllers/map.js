@@ -1,11 +1,11 @@
-angular.module('map',['getParkingData','uiGmapgoogle-maps','lumx'])
+angular.module('map',['parking-data.service','uiGmapgoogle-maps','lumx'])
 
 .controller('mapCtrl', mapCtrl)
 
-function mapCtrl($scope, $http, LxNotificationService) {
+function mapCtrl($scope, LxNotificationService, parkingDataService) {
   $scope.preLoader = true;
 
-  lotsData = getParkingData($http, $scope)
+  lotsData = parkingDataService.getData()
   .then(function(data){
     // loop to attach correct icon to data
     for (x in data){
@@ -27,7 +27,7 @@ function mapCtrl($scope, $http, LxNotificationService) {
 
   }, function (error){
     $scope.preLoader = false;
-    console.log("promise rejected");
+    console.log(error);
     LxNotificationService.error('Data Error');
   });
 
