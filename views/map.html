@@ -30,7 +30,7 @@
         <p>{{street_address}}</p>
         <p>Avail. Spaces: {{available_spaces}}</p>
         <a href="http://maps.google.com/?q={{street_address}} Santa Monica, CA">
-          <button id="directionsButton" ng-click="FlurryAgent.logEvent('directionClick');" class="btn btn--m btn--blue btn--raised" lx-ripple>
+          <button id="directionsButton" class="btn btn--m btn--blue btn--raised" lx-ripple>
             Directions
           </button>
         </a>
@@ -39,7 +39,5 @@
   </ui-gmap-markers>
 
 </ui-gmap-google-map>
-
-<script src="flurry/flurryMapPage.js"> </script>
 
 </div>
