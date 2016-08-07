@@ -30,7 +30,7 @@
       <tbody id="lotsTable">
         <tr ng-repeat="lot in lots | orderBy:sortType:sortReverse | filter:searchLots" class="data-table__sortable-cell">
           <td>{{ lot.name }}</td>
-          <td><a href="http://maps.google.com/?q={{ lot.street_address }} Santa Monica, CA">{{ lot.street_address }}<a></td>
+          <td><a href="https://maps.google.com/?q={{ lot.street_address }} Santa Monica, CA">{{ lot.street_address }}<a></td>
           <td>{{ lot.description }}</td>
           <td>{{ lot.available_spaces }}</td> <!--[{{$index + 1}}] -->
         </tr>
